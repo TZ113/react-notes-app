@@ -1,7 +1,8 @@
+import propTypes from 'prop-types'
 import React from "react"
 
 export default function Sidebar(props) {
-    const noteElements = props.notes.map((note, index) => (
+    const noteElements = props.notes.map((note) => (
         <div key={note.id}>
             <div
                 
@@ -30,4 +31,12 @@ export default function Sidebar(props) {
             {noteElements}
         </section>
     )
+}
+
+Sidebar.propTypes = {
+    notes: propTypes.array.isRequired,
+    currentNote: propTypes.object.isRequired,
+    setCurrentNoteId: propTypes.func.isRequired,
+    deleteNote: propTypes.func.isRequired,
+    newNote: propTypes.func.isRequired
 }

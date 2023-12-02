@@ -1,3 +1,4 @@
+import propTypes from "prop-types"
 import React from "react"
 import ReactMde from "react-mde"
 import Showdown from "showdown"
@@ -27,4 +28,9 @@ export default function Editor({ currentNote, updateNote }) {
             />
         </section>
     )
+}
+
+Editor.propTypes = {
+    currentNote: propTypes.object.isRequired,
+    updateNote: propTypes.func.isRequired
 }
