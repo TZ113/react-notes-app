@@ -28,10 +28,6 @@ button:focus {
     height: 100vh;
 }
 
-.sidebar--note {
-    /* display: flex; */
-}
-
 .sidebar--header {
     display: flex;
     justify-content: space-around;
@@ -94,11 +90,13 @@ button:focus {
     padding-inline: 5px;
     font-size: 0.8rem;
     font-weight: 400;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     color: #4A4E74;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    position: relative;
+    width: 210px;
 }
 
 .selected-note {
@@ -200,6 +198,28 @@ button:focus {
 
 .title-input {
     display: none;
-    width: auto;
-    height: 1.5rem;
+    width: 170px;
+    height: 28px;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.title-input:focus {
+    outline:none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24;
+  color: green;
+  border: 2px solid green;
+  border-radius: 5px;
+  padding-top: 0;
+  margin-left: 5px;
+  position: absolute;
+  left: 82%;
+  top: 0;
 }
