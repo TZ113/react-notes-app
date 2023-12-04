@@ -34,6 +34,7 @@ button:focus {
     align-items: center;
     background-color: #98B4D4;
     margin-bottom: 5px;
+    box-shadow: 2px 2px 2px rgba(152, 180, 212, .5)
 }
 
 .sidebar--header > h2 {
@@ -55,6 +56,15 @@ button:focus {
 .editor {
     width: 80%;
     height: 100vh;
+}
+
+.mde-header {
+    background-color: #98B4D4 !important;
+    box-shadow: 2px 2px 2px rgba(152, 180, 212, .5)
+}
+
+.mde-text:focus {
+    outline: none;
 }
 
 .title {

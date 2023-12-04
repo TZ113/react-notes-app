@@ -10,7 +10,8 @@
     "react-dom": "17.0.2",
     "react-mde": "11.5.0",
     "react-split": "2.0.13",
-    "showdown": "1.9.1"
+    "showdown": "1.9.1",
+    "showdown-xss-filter": "^0.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "*",
