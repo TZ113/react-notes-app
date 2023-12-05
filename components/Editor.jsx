@@ -27,7 +27,7 @@ export default function Editor({ tempNoteText, updateTempNoteText }) {
                 generateMarkdownPreview={(markdown) =>
                     Promise.resolve(converter.makeHtml(markdown))
                 }
-                minEditorHeight={80}
+                minEditorHeight={100}
                 maxEditorHeight={100}
                 heightUnits="vh"
             />
